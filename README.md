@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ========================================== -->
-<!-- 01 // ANIMATED BURGUNDY HERO BANNER         -->
+<!-- 01 // HERO BANNER                          -->
 <!-- ========================================== -->
 <img src="./assets/aryan-hero.svg" width="860" alt="Aryan Mall — AI Engineer & Full-Stack Developer" />
 
@@ -9,27 +9,25 @@
 <br>
 
 <!-- ========================================== -->
-<!-- 02 // LIVE CONTRIBUTION HEATMAP            -->
+<!-- 02 // CONTRIBUTIONS                        -->
 <!-- ========================================== -->
-<h3><code>aryan@github ~ $ ./contributions.sh --live</code></h3>
+<h3>Contributions</h3>
 
-<img src="./contrib-heatmap.svg" width="860" alt="Aryan's Live GitHub Contribution Graph — Refreshed Daily" />
+<img src="./contrib-heatmap.svg" width="860" alt="Aryan's Contribution Graph" />
 
 <br>
 <br>
 
 <!-- ========================================== -->
-<!-- 03 // TERMINAL WHOAMI: ASCII & LIVE STATS  -->
+<!-- 03 // PORTRAIT & METRICS                   -->
 <!-- ========================================== -->
-<h3><code>aryan@github ~ $ whoami --full</code></h3>
-
 <table>
   <tr>
     <td valign="top">
-      <img src="./aryan-ascii.svg" width="420" alt="Aryan Mall — Self-Typing Monochrome ASCII Portrait" />
+      <img src="./aryan-ascii.svg" width="420" alt="Aryan Mall — Portrait" />
     </td>
     <td valign="top">
-      <img src="./stats.svg" width="420" alt="Aryan Mall — Live Contribution & Streak Metrics" />
+      <img src="./stats.svg" width="420" alt="Aryan Mall — Contribution Metrics" />
     </td>
   </tr>
 </table>
@@ -38,9 +36,9 @@
 <br>
 
 <!-- ========================================== -->
-<!-- 04 // FEATURED PROJECTS SHOWCASE           -->
+<!-- 04 // FEATURED PROJECTS                    -->
 <!-- ========================================== -->
-<h3><code>aryan@github ~ $ ./projects.sh --highlighted</code></h3>
+<h3>Featured Projects</h3>
 
 </div>
 
@@ -73,9 +71,9 @@
 <div align="center">
 
 <!-- ========================================== -->
-<!-- 05 // TECHNICAL MATRIX & SKILLS            -->
+<!-- 05 // SKILLS & TECHNOLOGIES                -->
 <!-- ========================================== -->
-<h3><code>aryan@github ~ $ cat ./skills.json</code></h3>
+<h3>Skills &amp; Technologies</h3>
 
 <p>
   <b>Languages &amp; Core</b><br>
@@ -108,9 +106,9 @@
 <br>
 
 <!-- ========================================== -->
-<!-- 06 // CONNECT & LINKS                      -->
+<!-- 06 // CONNECT                              -->
 <!-- ========================================== -->
-<h3><code>aryan@github ~ $ ./links.sh --socials</code></h3>
+<h3>Connect</h3>
 
 <p>
   <a href="https://github.com/aryanTmall">
@@ -130,9 +128,9 @@
 <br>
 
 <!-- ========================================== -->
-<!-- 07 // MINIMAL ANIMATED FOOTER               -->
+<!-- 07 // FOOTER                               -->
 <!-- ========================================== -->
-<img src="./assets/aryan-footer.svg" width="860" alt="Aryan Mall — Terminal Status Footer" />
+<img src="./assets/aryan-footer.svg" width="860" alt="Aryan Mall — Status Footer" />
 
 <br>
 

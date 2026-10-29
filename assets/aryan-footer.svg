@@ -23,11 +23,10 @@
 
   <line x1="20" y1="1" x2="840" y2="1" stroke="url(#footerBeam)" stroke-width="1.5"/>
 
-  <!-- Left: Shell Command Prompt -->
+  <!-- Left: Status Prompt -->
   <g transform="translate(26, 36)">
     <circle cx="0" cy="0" r="4" fill="#39d353" class="pulse"/>
-    <text x="14" y="4" fill="#C77B9B" font-size="12.5" font-weight="600">aryan@github:~$</text>
-    <text x="145" y="4" fill="#F8F0F3" font-size="12.5">echo "Built with code, intention &amp; elegance."</text>
+    <text x="14" y="4" fill="#F8F0F3" font-size="12.5" font-weight="500">Built with code, intention &amp; elegance.</text>
   </g>
 
   <!-- Bottom Details -->

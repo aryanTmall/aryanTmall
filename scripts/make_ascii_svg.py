@@ -115,7 +115,7 @@ def generate_ascii_svg(src_path=SRC, out_path=OUT):
     for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
         parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
     parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
-                 f'text-anchor="middle">aryan@github: ~$ ./portrait.sh</text>')
+                 f'text-anchor="middle">Aryan Mall // Portrait</text>')
 
     # one <text> per row (single color -> no per-char markup, tiny file)
     font_size = CELL_H * 0.86
@@ -150,9 +150,9 @@ def generate_ascii_svg(src_path=SRC, out_path=OUT):
     status_y = status_line_y + 19
     parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}" stroke-width="1"/>')
     parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
-                 f'aryan@github:~$ whoami <tspan fill="{INK}">Aryan Mall</tspan></text>')
-    status_chars = len("aryan@github:~$ whoami Aryan Mall ")  # cursor sits after the name
-    parts.append(f'<rect x="{PAD + status_chars * 13 * 0.6:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{CURSOR}">'
+                 f'Aryan Mall <tspan fill="{INK}">· Creative Technologist &amp; AI Builder</tspan></text>')
+    status_chars = len("Aryan Mall · Creative Technologist & AI Builder ")  # cursor sits after the text
+    parts.append(f'<rect x="{PAD + status_chars * 13 * 0.58:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{CURSOR}">'
                  f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
                  f'dur="1s" repeatCount="indefinite"/></rect>')
 

@@ -115,7 +115,7 @@ parts = [
 for i, dot in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dot}"/>')
 parts.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
-             f'text-anchor="middle">aryan@github: ~$ ./stats.sh</text>')
+             f'text-anchor="middle">Activity &amp; Metrics</text>')
 
 # ---- stat tiles ----------------------------------------------------------
 for i, (label, value, suffix, caption, accent) in enumerate(tiles):
@@ -128,7 +128,7 @@ for i, (label, value, suffix, caption, accent) in enumerate(tiles):
     parts.append(f'<g class="t" style="animation-delay:{start:.2f}s">')
     parts.append(f'<rect x="{x:.1f}" y="{y}" width="{TILE_W:.1f}" height="{TILE_H}" rx="10" '
                  f'fill="{TILE}" stroke="{FRAME}" stroke-width="1"/>')
-    parts.append(f'<text x="{x+24:.1f}" y="{y+40}" fill="{MUTED}" font-size="22">$ {label}</text>')
+    parts.append(f'<text x="{x+24:.1f}" y="{y+40}" fill="{MUTED}" font-size="22">{label.title()}</text>')
 
     # count-up frames: ease-out so it decelerates into the real number
     num_y = y + 100
@@ -155,7 +155,7 @@ chart_h = H - PAD - CHART_TOP
 parts.append(f'<g class="t" style="animation-delay:{BAR_START - 0.3:.2f}s">')
 parts.append(f'<rect x="{chart_x}" y="{CHART_TOP}" width="{chart_w}" height="{chart_h}" rx="10" '
              f'fill="{TILE}" stroke="{FRAME}" stroke-width="1"/>')
-parts.append(f'<text x="{chart_x+24}" y="{CHART_TOP+40}" fill="{MUTED}" font-size="22">$ contributions / month</text>')
+parts.append(f'<text x="{chart_x+24}" y="{CHART_TOP+40}" fill="{MUTED}" font-size="22">Contributions / Month</text>')
 parts.append('</g>')
 
 plot_top = CHART_TOP + 64
