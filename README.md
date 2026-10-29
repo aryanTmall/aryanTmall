@@ -15,8 +15,6 @@
      portrait: python scripts/prep_photo.py <photo.png> && python scripts/make_ascii_svg.py
      stats:    python scripts/render_stats_svg.py (same daily workflow) -->
 
-<h3><code>aryan@github ~ $ whoami</code></h3>
-
 <table>
 <tr>
 <td valign="top"><img src="./aryan-ascii.svg" width="420" alt="Aryan Mall — ASCII portrait" /></td>
@@ -27,7 +25,7 @@
 <br>
 <br>
 
-<h3><code>aryan@github ~ $ ./links.sh</code></h3>
+<h3><code>links</code></h3>
 
 <p><b>Developer · Builder · Problem Solver</b></p>
 
