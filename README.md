@@ -1,39 +1,138 @@
 <div align="center">
 
-<!-- animated contribution graph: real data, boxes reveal cell by cell
-     (regenerated daily by .github/workflows/update-profile-art.yml) -->
-
-<h3><code>aryan@github ~ $ ./contributions.sh</code></h3>
-
-<img src="./contrib-heatmap.svg" width="860" alt="Aryan's GitHub contribution graph — auto-refreshed daily" />
+<!-- ========================================== -->
+<!-- 01 // ANIMATED BURGUNDY HERO BANNER         -->
+<!-- ========================================== -->
+<img src="./assets/aryan-hero.svg" width="860" alt="Aryan Mall — AI Engineer & Full-Stack Developer" />
 
 <br>
 <br>
 
-<!-- ascii portrait (left) + streak/numbers card (right). both svgs are
-     840x880 so equal widths give equal heights.
-     portrait: python scripts/prep_photo.py <photo.png> && python scripts/make_ascii_svg.py
-     stats:    python scripts/render_stats_svg.py (same daily workflow) -->
+<!-- ========================================== -->
+<!-- 02 // LIVE CONTRIBUTION HEATMAP            -->
+<!-- ========================================== -->
+<h3><code>aryan@github ~ $ ./contributions.sh --live</code></h3>
 
-<h3><code>aryan@github ~ $ whoami</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Aryan's Live GitHub Contribution Graph — Refreshed Daily" />
+
+<br>
+<br>
+
+<!-- ========================================== -->
+<!-- 03 // TERMINAL WHOAMI: ASCII & LIVE STATS  -->
+<!-- ========================================== -->
+<h3><code>aryan@github ~ $ whoami --full</code></h3>
 
 <table>
-<tr>
-<td valign="top"><img src="./aryan-ascii.svg" width="420" alt="Aryan Mall — ASCII portrait" /></td>
-<td valign="top"><img src="./stats.svg" width="420" alt="Aryan's GitHub streak and contribution stats — auto-refreshed daily" /></td>
-</tr>
+  <tr>
+    <td valign="top">
+      <img src="./aryan-ascii.svg" width="420" alt="Aryan Mall — Self-Typing Monochrome ASCII Portrait" />
+    </td>
+    <td valign="top">
+      <img src="./stats.svg" width="420" alt="Aryan Mall — Live Contribution & Streak Metrics" />
+    </td>
+  </tr>
 </table>
 
 <br>
 <br>
 
-<h3><code>aryan@github ~ $ ./links.sh</code></h3>
+<!-- ========================================== -->
+<!-- 04 // FEATURED PROJECTS SHOWCASE           -->
+<!-- ========================================== -->
+<h3><code>aryan@github ~ $ ./projects.sh --highlighted</code></h3>
 
-<p><b>Developer · Builder · Problem Solver</b></p>
+</div>
 
-[![GitHub](https://img.shields.io/badge/GitHub-aryanTmall-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aryanTmall)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aryan_Mall-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-aryantmall.github.io-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://aryantmall.github.io)
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4><code>01 //</code> <a href="https://github.com/aryanTmall/inkloom"><b>inkloom</b></a></h4>
+      <p>Specialised AI models for logo design and typography. Converts brand constraints into geometric marks, lockups, and compositional clear-space rules.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-190B12?style=flat-square&logo=next.js&logoColor=F8F0F3" alt="Next.js" />
+        <img src="https://img.shields.io/badge/Python-451126?style=flat-square&logo=python&logoColor=F8F0F3" alt="Python" />
+        <img src="https://img.shields.io/badge/AI_Inference-701A3D?style=flat-square&logo=openai&logoColor=F8F0F3" alt="AI" />
+        <img src="https://img.shields.io/badge/Live_App-inkloom.art-C77B9B?style=flat-square" alt="inkloom.art" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><code>02 //</code> <a href="https://github.com/aryanTmall/Apex-Coderss"><b>Apex-Coderss</b></a></h4>
+      <p>Algorithmic challenge solver, data structure implementations, and competitive coding engine built for high performance and problem-solving velocity.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Algorithms-190B12?style=flat-square&logo=cplusplus&logoColor=F8F0F3" alt="Algorithms" />
+        <img src="https://img.shields.io/badge/JavaScript-451126?style=flat-square&logo=javascript&logoColor=F8F0F3" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/Problem_Solving-701A3D?style=flat-square&logo=leetcode&logoColor=F8F0F3" alt="Problem Solving" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<!-- ========================================== -->
+<!-- 05 // TECHNICAL MATRIX & SKILLS            -->
+<!-- ========================================== -->
+<h3><code>aryan@github ~ $ cat ./skills.json</code></h3>
+
+<p>
+  <b>Languages &amp; Core</b><br>
+  <img src="https://img.shields.io/badge/Python-190B12?style=for-the-badge&logo=python&logoColor=F8F0F3" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-451126?style=for-the-badge&logo=typescript&logoColor=F8F0F3" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-701A3D?style=for-the-badge&logo=javascript&logoColor=F8F0F3" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/C++-190B12?style=for-the-badge&logo=c%2B%2B&logoColor=F8F0F3" alt="C++" />
+  <img src="https://img.shields.io/badge/SQL-451126?style=for-the-badge&logo=postgresql&logoColor=F8F0F3" alt="SQL" />
+</p>
+
+<p>
+  <b>Full-Stack &amp; Frameworks</b><br>
+  <img src="https://img.shields.io/badge/React-190B12?style=for-the-badge&logo=react&logoColor=F8F0F3" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-451126?style=for-the-badge&logo=nextdotjs&logoColor=F8F0F3" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Node.js-701A3D?style=for-the-badge&logo=nodedotjs&logoColor=F8F0F3" alt="Node.js" />
+  <img src="https://img.shields.io/badge/FastAPI-190B12?style=for-the-badge&logo=fastapi&logoColor=F8F0F3" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-451126?style=for-the-badge&logo=tailwindcss&logoColor=F8F0F3" alt="Tailwind" />
+</p>
+
+<p>
+  <b>AI/ML, DevOps &amp; Engineering Tools</b><br>
+  <img src="https://img.shields.io/badge/PyTorch-190B12?style=for-the-badge&logo=pytorch&logoColor=F8F0F3" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/OpenCV-451126?style=for-the-badge&logo=opencv&logoColor=F8F0F3" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Git-701A3D?style=for-the-badge&logo=git&logoColor=F8F0F3" alt="Git" />
+  <img src="https://img.shields.io/badge/Docker-190B12?style=for-the-badge&logo=docker&logoColor=F8F0F3" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-451126?style=for-the-badge&logo=linux&logoColor=F8F0F3" alt="Linux" />
+</p>
+
+<br>
+<br>
+
+<!-- ========================================== -->
+<!-- 06 // CONNECT & LINKS                      -->
+<!-- ========================================== -->
+<h3><code>aryan@github ~ $ ./links.sh --socials</code></h3>
+
+<p>
+  <a href="https://github.com/aryanTmall">
+    <img src="https://img.shields.io/badge/GitHub-aryanTmall-190B12?style=for-the-badge&logo=github&logoColor=F8F0F3" alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com">
+    <img src="https://img.shields.io/badge/LinkedIn-Aryan_Mall-451126?style=for-the-badge&logo=linkedin&logoColor=F8F0F3" alt="LinkedIn" />
+  </a>
+  <a href="https://aryantmall.github.io">
+    <img src="https://img.shields.io/badge/Portfolio-aryantmall.github.io-701A3D?style=for-the-badge&logo=safari&logoColor=F8F0F3" alt="Portfolio" />
+  </a>
+  <a href="mailto:aryanfreefire15@gmail.com">
+    <img src="https://img.shields.io/badge/Contact-Get_In_Touch-C77B9B?style=for-the-badge&logo=gmail&logoColor=10070C" alt="Email" />
+  </a>
+</p>
+
+<br>
+
+<!-- ========================================== -->
+<!-- 07 // MINIMAL ANIMATED FOOTER               -->
+<!-- ========================================== -->
+<img src="./assets/aryan-footer.svg" width="860" alt="Aryan Mall — Terminal Status Footer" />
 
 <br>
 

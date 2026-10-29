@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="84" viewBox="0 0 860 84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+    <linearGradient id="footerBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .pulse { animation: p 2s infinite ease-in-out; }
+    @keyframes p { 0%,100%{opacity:0.4} 50%{opacity:1} }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none !important; } }
+  </style>
+
+  <!-- Background -->
+  <rect width="860" height="84" rx="10" fill="url(#footerBg)"/>
+  <rect x="0.5" y="0.5" width="859" height="83" rx="10" fill="none" stroke="#701A3D" stroke-width="1" stroke-opacity="0.6"/>
+
+  <line x1="20" y1="1" x2="840" y2="1" stroke="url(#footerBeam)" stroke-width="1.5"/>
+
+  <!-- Left: Shell Command Prompt -->
+  <g transform="translate(26, 36)">
+    <circle cx="0" cy="0" r="4" fill="#39d353" class="pulse"/>
+    <text x="14" y="4" fill="#C77B9B" font-size="12.5" font-weight="600">aryan@github:~$</text>
+    <text x="145" y="4" fill="#F8F0F3" font-size="12.5">echo "Built with code, intention &amp; elegance."</text>
+  </g>
+
+  <!-- Bottom Details -->
+  <g transform="translate(26, 62)">
+    <text x="0" y="0" fill="#E5B5C7" font-size="11" opacity="0.75">
+      © 2026 ARYAN MALL · ALL REPOSITORIES CRAFTED TO SHIP
+    </text>
+    <text x="808" y="0" fill="#C77B9B" font-size="11" text-anchor="end" opacity="0.8">
+      FARIDABAD, IN // UTC+05:30
+    </text>
+  </g>
+</svg>

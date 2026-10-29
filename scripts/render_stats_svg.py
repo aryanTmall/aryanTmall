@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Render the streak / stats numbers card from data/contributions.json (written daily by
-fetch_contributions.py) as a terminal-window SVG that sits beside aryan-ascii.svg.
+fetch_contributions.py) as an editorial burgundy terminal-window SVG that sits beside aryan-ascii.svg.
 
 The canvas is the same size as the portrait (840 x 880) so the two panels line
 up when the README shows them side by side at equal widths.
@@ -23,14 +23,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "data", "contributions.json")
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "stats.svg")
 
-BG = "#0d1117"
-BG2 = "#111722"
-TILE = "#161b22"
-FRAME = "#30363d"
-MUTED = "#7d8590"
-INK = "#e6edf3"
-GREEN = "#39d353"
-BAR = "#26a641"
+# Burgundy Luxury Tech Palette
+BG = "#10070C"           # midnight
+BG2 = "#190B12"          # dark wine
+TILE = "#140810"         # subtle wine tile surface
+FRAME = "#451126"        # burgundy frame border
+ACCENT_FRAME = "#701A3D" # wine accent
+MUTED = "#C77B9B"        # rose
+INK = "#F8F0F3"          # ivory
+ROSE = "#E5B5C7"         # pale rose
+GREEN = "#39d353"        # emerald green for active streak
+BAR = "#701A3D"          # wine bar
+BAR_PEAK = "#C77B9B"     # rose peak bar
 
 W, H = 840, 880  # == aryan-ascii.svg canvas
 PAD = 20
@@ -79,12 +83,12 @@ avg_active = data.get("avg_per_active_day", 0.0)
 
 # (label, value, suffix, caption, accent)
 tiles = [
-    ("current streak", cur["length"], " days", span(cur), GREEN),
+    ("current streak", cur["length"], " days", span(cur), GREEN if cur["length"] > 0 else ROSE),
     ("longest streak", lng["length"], " days", span(lng), INK),
-    ("contributions", total_contribs, "", "in the last year", INK),
+    ("contributions", total_contribs, "", "in the last year", ROSE),
     ("active days", active_days, f" / {n_days}", f"{active_days / n_days:.0%} of the year", INK),
     ("best day", best["count"], "", short(best["date"]), INK),
-    ("avg / active day", avg_active, "", "contributions", INK),
+    ("avg / active day", avg_active, "", "contributions", ROSE),
 ]
 
 
@@ -105,8 +109,8 @@ parts = [
     f'<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
     f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>',
     f'<rect width="{W}" height="{H}" rx="12" fill="url(#bg)"/>',
-    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="{FRAME}"/>',
-    f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
+    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="{ACCENT_FRAME}" stroke-width="1.2" stroke-opacity="0.8"/>',
+    f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}" stroke-width="1"/>',
 ]
 for i, dot in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dot}"/>')
@@ -123,7 +127,7 @@ for i, (label, value, suffix, caption, accent) in enumerate(tiles):
 
     parts.append(f'<g class="t" style="animation-delay:{start:.2f}s">')
     parts.append(f'<rect x="{x:.1f}" y="{y}" width="{TILE_W:.1f}" height="{TILE_H}" rx="10" '
-                 f'fill="{TILE}" stroke="{FRAME}"/>')
+                 f'fill="{TILE}" stroke="{FRAME}" stroke-width="1"/>')
     parts.append(f'<text x="{x+24:.1f}" y="{y+40}" fill="{MUTED}" font-size="22">$ {label}</text>')
 
     # count-up frames: ease-out so it decelerates into the real number
@@ -141,7 +145,7 @@ for i, (label, value, suffix, caption, accent) in enumerate(tiles):
             f'{fmt(v, value)}<tspan font-size="24" font-weight="400" fill="{MUTED}">{suffix}</tspan>'
             f'{anim}</text>'
         )
-    parts.append(f'<text x="{x+24:.1f}" y="{y+132}" fill="{MUTED}" font-size="20">{caption}</text>')
+    parts.append(f'<text x="{x+24:.1f}" y="{y+132}" fill="{MUTED}" font-size="20" opacity="0.85">{caption}</text>')
     parts.append('</g>')
 
 # ---- monthly bars --------------------------------------------------------
@@ -150,7 +154,7 @@ chart_x, chart_w = PAD, W - PAD * 2
 chart_h = H - PAD - CHART_TOP
 parts.append(f'<g class="t" style="animation-delay:{BAR_START - 0.3:.2f}s">')
 parts.append(f'<rect x="{chart_x}" y="{CHART_TOP}" width="{chart_w}" height="{chart_h}" rx="10" '
-             f'fill="{TILE}" stroke="{FRAME}"/>')
+             f'fill="{TILE}" stroke="{FRAME}" stroke-width="1"/>')
 parts.append(f'<text x="{chart_x+24}" y="{CHART_TOP+40}" fill="{MUTED}" font-size="22">$ contributions / month</text>')
 parts.append('</g>')
 
@@ -164,7 +168,7 @@ if monthly:
     for i, m in enumerate(monthly):
         h = max(2, (plot_bot - plot_top) * m["total"] / peak)
         bx = plot_l + i * slot + (slot - bar_w) / 2
-        fill = GREEN if m["total"] == peak and peak > 0 else BAR
+        fill = BAR_PEAK if m["total"] == peak and peak > 0 else BAR
         delay = BAR_START + i * BAR_STAGGER
         parts.append(f'<rect class="b" x="{bx:.1f}" y="{plot_bot - h:.1f}" width="{bar_w:.1f}" height="{h:.1f}" '
                      f'rx="3" fill="{fill}" style="animation-delay:{delay:.2f}s"/>')

@@ -1,11 +1,12 @@
 """
 Convert a portrait photo into a CLEAN, monochrome ASCII-art SVG (Andrew6rant
-style: one light-gray color, subject isolated on a dark background) that "types"
+style: one crisp ivory color, subject isolated on a midnight/wine background) that "types"
 itself in like a terminal, then holds.
 
-Monochrome is deliberate -- per-character rainbow color is what makes ASCII
-portraits look noisy. One fill color + a good density ramp + high contrast (so a
-busy background washes out to blank) reads as neat and legible.
+Enhanced with Burgundy Visual System:
+- Midnight background #10070C & Dark Wine #190B12
+- Burgundy frame stroke #451126 & Wine Accent #701A3D
+- Rose accents #C77B9B & Ivory ink #F8F0F3
 
 GitHub renders SVGs embedded via <img> and runs their SMIL animations there (JS
 does not run). Each row is revealed with a left-to-right clip wipe plus a small
@@ -48,12 +49,14 @@ ART_H = ROWS * CELL_H
 CANVAS_W = int(ART_W + PAD * 2)
 CANVAS_H = int(TITLEBAR_H + ART_H + STATUS_H + PAD)
 
-BG = "#0d1117"
-BG2 = "#111722"
-FRAME = "#30363d"
-TITLE_TEXT = "#7d8590"
-INK = "#c9d1d9"  # the single ascii color (matches Andrew6rant)
-CURSOR = "#c9d1d9"
+# Burgundy Luxury Tech Palette
+BG = "#10070C"           # midnight
+BG2 = "#190B12"          # dark wine
+FRAME = "#451126"        # burgundy divider
+ACCENT_FRAME = "#701A3D" # wine accent outer border
+TITLE_TEXT = "#C77B9B"   # rose
+INK = "#F8F0F3"          # ivory ascii ink
+CURSOR = "#C77B9B"       # rose cursor
 
 # ---- reveal timing (one-shot; a cursor rasters top -> bottom) -------------
 ROW_DUR = 5.8 / ROWS  # whole portrait prints in ~6s at any resolution
@@ -106,9 +109,9 @@ def generate_ascii_svg(src_path=SRC, out_path=OUT):
 
     parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="12" fill="url(#bg)"/>')
     parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="12" '
-                 f'fill="none" stroke="{FRAME}" stroke-width="1"/>')
+                 f'fill="none" stroke="{ACCENT_FRAME}" stroke-width="1.2" stroke-opacity="0.8"/>')
 
-    parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')
+    parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}" stroke-width="1"/>')
     for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
         parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
     parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
@@ -145,11 +148,11 @@ def generate_ascii_svg(src_path=SRC, out_path=OUT):
     # status bar with a steady blinking cursor
     status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
     status_y = status_line_y + 19
-    parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
+    parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}" stroke-width="1"/>')
     parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
                  f'aryan@github:~$ whoami <tspan fill="{INK}">Aryan Mall</tspan></text>')
     status_chars = len("aryan@github:~$ whoami Aryan Mall ")  # cursor sits after the name
-    parts.append(f'<rect x="{PAD + status_chars * 13 * 0.6:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+    parts.append(f'<rect x="{PAD + status_chars * 13 * 0.6:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{CURSOR}">'
                  f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
                  f'dur="1s" repeatCount="indefinite"/></rect>')
 
