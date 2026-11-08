@@ -2,12 +2,15 @@
 """
 Generate the Formula 1 & Max Verstappen #1 Cockpit Telemetry Hero SVG (hero.svg).
 Pure self-contained SVG + SMIL / CSS keyframe animations.
+Accurately displays Aryan Mall's F1 cockpit avatar and verified skills.
 """
 import base64
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PHOTO_PATH = os.path.join(HERE, "..", "source-photo.png")
+PHOTO_PATH = os.path.join(HERE, "..", "f1-avatar.png")
+if not os.path.exists(PHOTO_PATH):
+    PHOTO_PATH = os.path.join(HERE, "..", "source-photo.png")
 OUT_PATH = os.path.join(HERE, "..", "hero.svg")
 
 with open(PHOTO_PATH, "rb") as f:
@@ -54,9 +57,9 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
       <rect x="6" y="6" width="6" height="6" fill="#0c1322" opacity="0.4"/>
     </pattern>
 
-    <!-- Clip Path for Driver Visor / Photo -->
+    <!-- Clip Path for Driver Visor / Photo (in local coordinates of container <g>) -->
     <clipPath id="avatarVisor">
-      <rect x="625" y="105" width="170" height="170" rx="22"/>
+      <rect x="20" y="50" width="170" height="170" rx="22"/>
     </clipPath>
 
     <!-- Glow Filter -->
@@ -98,8 +101,8 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
 
     /* Role Cycler */
     .role-text {{
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 13.5px;
+      font-weight: 800;
       letter-spacing: 0.1em;
       fill: #00f0ff;
     }}
@@ -192,19 +195,19 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
   <g transform="translate(38, 182)">
     <!-- Role 1 -->
     <text class="role-text" opacity="0">
-      ⚡ AI SYSTEMS ARCHITECT &amp; ML RESEARCHER
+      ⚡ WEB CRAFTER // HTML · CSS · JS · PYTHON
       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.30;0.34" dur="10.5s" repeatCount="indefinite"/>
       <animate attributeName="y" values="6;0;0;-6" keyTimes="0;0.08;0.30;0.34" dur="10.5s" repeatCount="indefinite"/>
     </text>
     <!-- Role 2 -->
     <text class="role-text" opacity="0">
-      🏎️ FULL-STACK HIGH VELOCITY ENGINEER
+      🏆 SIH 2026 TEAM LEADER // THERMOINTEL
       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.34;0.42;0.63;0.67" dur="10.5s" repeatCount="indefinite"/>
       <animate attributeName="y" values="6;0;0;-6" keyTimes="0.34;0.42;0.63;0.67" dur="10.5s" repeatCount="indefinite"/>
     </text>
     <!-- Role 3 -->
     <text class="role-text" opacity="0">
-      🏁 ZERO-LATENCY ALGORITHM &amp; SYSTEMS BUILDER
+      🏎️ RAPID PROTOTYPER &amp; MAX VERSTAPPEN #1 FAN
       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.67;0.75;0.96;1" dur="10.5s" repeatCount="indefinite"/>
       <animate attributeName="y" values="6;0;0;-6" keyTimes="0.67;0.75;0.96;1" dur="10.5s" repeatCount="indefinite"/>
     </text>
@@ -226,17 +229,17 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
   <g transform="translate(38, 290)">
     <rect width="520" height="44" rx="10" fill="#060b14" stroke="#253a5c" stroke-width="1"/>
     <!-- Sector 1 -->
-    <text x="20" y="18" fill="#6880a4" font-size="10" font-weight="700">SECTOR 1</text>
-    <text x="20" y="34" fill="#a855f7" font-size="13" font-weight="900">🟣 24.1s</text>
+    <text x="20" y="18" fill="#6880a4" font-size="10" font-weight="700">CAMPUS</text>
+    <text x="20" y="34" fill="#a855f7" font-size="12" font-weight="900">SUSHANT UNIV</text>
     <!-- Sector 2 -->
-    <text x="145" y="18" fill="#6880a4" font-size="10" font-weight="700">SECTOR 2</text>
-    <text x="145" y="34" fill="#a855f7" font-size="13" font-weight="900">🟣 31.4s</text>
+    <text x="155" y="18" fill="#6880a4" font-size="10" font-weight="700">CORE TECH</text>
+    <text x="155" y="34" fill="#00f0ff" font-size="12" font-weight="900">HTML·CSS·JS·PY</text>
     <!-- Top Speed -->
-    <text x="270" y="18" fill="#6880a4" font-size="10" font-weight="700">TOP SPEED</text>
-    <text x="270" y="34" fill="#00f0ff" font-size="13" font-weight="900">345 KM/H</text>
+    <text x="295" y="18" fill="#6880a4" font-size="10" font-weight="700">TOP SPEED</text>
+    <text x="295" y="34" fill="#fcd700" font-size="12" font-weight="900">345 KM/H (P1)</text>
     <!-- Tyre Compound -->
-    <text x="395" y="18" fill="#6880a4" font-size="10" font-weight="700">TYRE STRAT</text>
-    <text x="395" y="34" fill="#ff1801" font-size="12" font-weight="900">🔴 SOFT (L1)</text>
+    <text x="415" y="18" fill="#6880a4" font-size="10" font-weight="700">TYRE STRAT</text>
+    <text x="415" y="34" fill="#ff1801" font-size="12" font-weight="900">🔴 SOFT (L1)</text>
   </g>
 
   <!-- RIGHT COCKPIT VIEWFINDER (DRIVER VISOR & TELEMETRY) -->
@@ -251,7 +254,7 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
     <!-- Viewfinder Background Window -->
     <rect x="15" y="45" width="180" height="180" rx="22" fill="#080e1a" stroke="#253a5c" stroke-width="1.5"/>
 
-    <!-- Embedded Driver Avatar -->
+    <!-- Embedded Driver Avatar (Now clipped cleanly to exact inner frame) -->
     <image href="data:image/png;base64,{photo_b64}" x="20" y="50" width="170" height="170" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarVisor)"/>
 
     <!-- Driver Visor Aerodynamic Border -->

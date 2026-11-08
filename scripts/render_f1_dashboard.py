@@ -17,7 +17,9 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "data", "contributions.json")
 OUT_PATH = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "id-dashboard.svg")
-PHOTO_PATH = os.path.join(HERE, "..", "source-photo.png")
+PHOTO_PATH = os.path.join(HERE, "..", "f1-avatar.png")
+if not os.path.exists(PHOTO_PATH):
+    PHOTO_PATH = os.path.join(HERE, "..", "source-photo.png")
 
 with open(PHOTO_PATH, "rb") as f:
     photo_b64 = base64.b64encode(f.read()).decode("ascii")
@@ -250,10 +252,10 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="52
             ARYAN MALL
           </text>
           <text x="0" y="18" fill="#fcd700" font-size="11" font-weight="800" letter-spacing="0.08em">
-            AI SYSTEMS ARCHITECT &amp; FULL-STACK
+            WEB CRAFTER &amp; CS EXPLORER
           </text>
           <text x="0" y="32" fill="#8da2c0" font-size="10" font-weight="600">
-            Oracle Red Bull Racing Digital Garage // Faridabad, IN
+            Sushant University // SIH 2026 Team Lead
           </text>
         </g>
 

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 Generate stack.svg:
-V6 Turbo Hybrid Power Unit Tech Orbit + Grouped Pit Stop Chip Grid.
-Features 3 tilted 3D elliptical orbits with tech icons and orbiting moons,
-plus a 4-group telemetry chip grid with sequential glowing borders.
+Formula 1 & Max Verstappen #1 Tech Orbit + Telemetry Chip Grid.
+Accurately reflects Aryan Mall's verified skillset:
+- Core Accomplished: HTML5, CSS3, JavaScript, Python, Git
+- Active Learning Roadmap: React, Next.js, C++, TypeScript, AI/ML
 """
 import os
 
@@ -109,7 +110,7 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBo
     ENGINEERING STACK <tspan fill="#6880a4">// V6 TURBO HYBRID TECH ORBIT</tspan>
   </text>
   <text x="836" y="23" fill="#fcd700" font-size="11" font-weight="700" text-anchor="end">
-    RPM: 15,000 MAX // ERS DEPLOYED
+    GRID STATUS: ACTIVE BUILDER // ACCELERATING
   </text>
 
   <!-- =================================================================== -->
@@ -139,198 +140,162 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBo
     <circle cx="430" cy="145" r="18" fill="#fcd700"/>
     <text x="430" y="149" fill="#070c17" font-size="11" font-weight="900" text-anchor="middle">V6</text>
 
-    <!-- Orbit 1 Rotating Nodes (Python & TypeScript) -->
+    <!-- Orbit 1 Rotating Nodes: CORE FOUNDATION (HTML5 & CSS3) -->
     <g class="rot-orbit1">
-      <!-- Node: Python (Top-Left) -->
+      <!-- HTML5 -->
       <g transform="translate(315, 115)">
-        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#fcd700" stroke-width="1.5"/>
-        <text x="0" y="5" fill="#fcd700" font-size="16" font-weight="900" text-anchor="middle">🐍</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">Python</text>
+        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#ff6b00" stroke-width="1.5"/>
+        <text x="0" y="5" fill="#ff6b00" font-size="14" font-weight="900" text-anchor="middle">&lt;/&gt;</text>
+        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">HTML5</text>
       </g>
-      <!-- Node: TypeScript (Bottom-Right) -->
+      <!-- CSS3 -->
       <g transform="translate(545, 175)">
         <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#00f0ff" stroke-width="1.5"/>
-        <text x="0" y="5" fill="#00f0ff" font-size="13" font-weight="900" text-anchor="middle">TS</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">TypeScript</text>
+        <text x="0" y="5" fill="#00f0ff" font-size="13" font-weight="900" text-anchor="middle">#CSS</text>
+        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">CSS3</text>
       </g>
     </g>
 
-    <!-- Orbit 2 Rotating Nodes (React with 2 Orbiting Moons: Next.js & Tailwind) -->
+    <!-- Orbit 2 Rotating Nodes: LOGIC & ENGINES (JavaScript & Python) -->
     <g class="rot-orbit2">
-      <!-- React Mother Node -->
+      <!-- JavaScript -->
       <g transform="translate(230, 170)">
-        <rect x="-20" y="-20" width="40" height="40" rx="10" fill="#091426" stroke="#00f0ff" stroke-width="1.8"/>
-        <text x="0" y="6" fill="#00f0ff" font-size="18" font-weight="900" text-anchor="middle">⚛️</text>
-        <text x="0" y="30" fill="#00f0ff" font-size="9.5" font-weight="800" text-anchor="middle">React</text>
-
-        <!-- Moon 1: Next.js orbiting React -->
-        <g class="moon-orbit">
-          <circle cx="28" cy="0" r="11" fill="#040812" stroke="#ffffff" stroke-width="1"/>
-          <text x="28" y="3" fill="#ffffff" font-size="8" font-weight="900" text-anchor="middle">N</text>
-        </g>
-        <!-- Moon 2: Tailwind orbiting React (opposite) -->
-        <g class="moon-orbit">
-          <circle cx="-28" cy="0" r="11" fill="#040812" stroke="#38bdf8" stroke-width="1"/>
-          <text x="-28" y="3" fill="#38bdf8" font-size="8" font-weight="900" text-anchor="middle">≈</text>
-        </g>
+        <rect x="-20" y="-20" width="40" height="40" rx="10" fill="#091426" stroke="#fcd700" stroke-width="1.8"/>
+        <text x="0" y="6" fill="#fcd700" font-size="16" font-weight="900" text-anchor="middle">JS</text>
+        <text x="0" y="30" fill="#fcd700" font-size="9.5" font-weight="800" text-anchor="middle">JavaScript</text>
       </g>
 
-      <!-- FastAPI Node (Opposite side) -->
+      <!-- Python -->
       <g transform="translate(630, 120)">
-        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#009688" stroke-width="1.5"/>
-        <text x="0" y="5" fill="#009688" font-size="14" font-weight="900" text-anchor="middle">⚡</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">FastAPI</text>
+        <rect x="-20" y="-20" width="40" height="40" rx="10" fill="#091426" stroke="#39d353" stroke-width="1.8"/>
+        <text x="0" y="6" fill="#39d353" font-size="16" font-weight="900" text-anchor="middle">🐍</text>
+        <text x="0" y="30" fill="#39d353" font-size="9.5" font-weight="800" text-anchor="middle">Python</text>
       </g>
     </g>
 
-    <!-- Orbit 3 Rotating Nodes (C++, PyTorch, Docker) -->
+    <!-- Orbit 3 Rotating Nodes: ROADMAP & EXPLORATION (React, C++, AI/ML) -->
     <g class="rot-orbit3">
-      <!-- C++ Node -->
+      <!-- React.js (Next on Grid) -->
       <g transform="translate(140, 130)">
+        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#00f0ff" stroke-width="1.5"/>
+        <text x="0" y="5" fill="#00f0ff" font-size="14" font-weight="900" text-anchor="middle">⚛️</text>
+        <text x="0" y="27" fill="#8da2c0" font-size="8.5" font-weight="700" text-anchor="middle">React (Roadmap)</text>
+      </g>
+      <!-- C++ -->
+      <g transform="translate(430, 242)">
         <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#ff1801" stroke-width="1.5"/>
         <text x="0" y="5" fill="#ff1801" font-size="12" font-weight="900" text-anchor="middle">C++</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">Speed Core</text>
+        <text x="0" y="27" fill="#8da2c0" font-size="8.5" font-weight="700" text-anchor="middle">C++ (Roadmap)</text>
       </g>
-      <!-- PyTorch Node -->
-      <g transform="translate(430, 242)">
-        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#ff6b00" stroke-width="1.5"/>
-        <text x="0" y="5" fill="#ff6b00" font-size="14" font-weight="900" text-anchor="middle">🔥</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">PyTorch</text>
-      </g>
-      <!-- Docker Node -->
+      <!-- AI / ML -->
       <g transform="translate(720, 160)">
-        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#2496ed" stroke-width="1.5"/>
-        <text x="0" y="5" fill="#2496ed" font-size="14" font-weight="900" text-anchor="middle">🐳</text>
-        <text x="0" y="27" fill="#ffffff" font-size="9" font-weight="800" text-anchor="middle">Docker</text>
+        <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0e172a" stroke="#a855f7" stroke-width="1.5"/>
+        <text x="0" y="5" fill="#a855f7" font-size="14" font-weight="900" text-anchor="middle">🤖</text>
+        <text x="0" y="27" fill="#8da2c0" font-size="8.5" font-weight="700" text-anchor="middle">AI/ML (Roadmap)</text>
       </g>
     </g>
   </g>
 
   <!-- =================================================================== -->
-  <!-- BOTTOM HALF: PIT STOP TELEMETRY CHIP GRID (4 Departments)          -->
+  <!-- BOTTOM HALF: PIT STOP TELEMETRY CHIP GRID (4 Honest Departments)    -->
   <!-- =================================================================== -->
   <g transform="translate(20, 275)">
-    <!-- Department 1: POWERTRAIN // CORE -->
+    <!-- Department 1: WEB FOUNDATIONS // MASTERED -->
     <g transform="translate(0, 0)">
       <rect width="195" height="195" rx="12" fill="url(#chipBg)" stroke="#1f3354" stroke-width="1.2" class="glow-chip1"/>
       <path d="M0 0 L195 0 L195 30 L0 30 Z" fill="#0a1222"/>
       <line x1="0" y1="30" x2="195" y2="30" stroke="#1f3354" stroke-width="0.8"/>
-      <text x="12" y="19" fill="#ff1801" font-size="10.5" font-weight="800" letter-spacing="0.1em">POWERTRAIN // CORE</text>
+      <text x="12" y="19" fill="#ff6b00" font-size="10" font-weight="800" letter-spacing="0.1em">WEB CORE // READY</text>
 
-      <!-- Chips -->
       <g transform="translate(12, 44)">
-        <rect x="0" y="0" width="78" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="39" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Python</text>
+        <rect x="0" y="0" width="78" height="26" rx="6" fill="#080e1c" stroke="#ff6b00" stroke-width="1"/>
+        <text x="39" y="17" fill="#ff6b00" font-size="11" font-weight="700" text-anchor="middle">HTML5</text>
 
-        <rect x="88" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="129" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">C++ Core</text>
+        <rect x="88" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#00f0ff" stroke-width="1"/>
+        <text x="129" y="17" fill="#00f0ff" font-size="11" font-weight="700" text-anchor="middle">CSS3</text>
 
-        <rect x="0" y="36" width="94" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="47" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">TypeScript</text>
+        <rect x="0" y="36" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Responsive Layouts</text>
 
-        <rect x="104" y="36" width="66" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="137" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">SQL DB</text>
+        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Flexbox &amp; CSS Grid</text>
 
-        <rect x="0" y="72" width="102" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="51" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">JavaScript</text>
-
-        <rect x="112" y="72" width="58" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="141" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Go Lang</text>
-
-        <text x="0" y="132" fill="#6880a4" font-size="9" font-weight="700">SPEC: HIGH-THROUGHPUT</text>
+        <text x="0" y="132" fill="#39d353" font-size="9" font-weight="800">STATUS: ON TRACK // MASTERED</text>
       </g>
     </g>
 
-    <!-- Department 2: AERODYNAMICS // FRONTEND -->
+    <!-- Department 2: LOGIC & SCRIPTING // ACTIVE -->
     <g transform="translate(208, 0)">
       <rect width="195" height="195" rx="12" fill="url(#chipBg)" stroke="#1f3354" stroke-width="1.2" class="glow-chip2"/>
       <path d="M0 0 L195 0 L195 30 L0 30 Z" fill="#0a1222"/>
       <line x1="0" y1="30" x2="195" y2="30" stroke="#1f3354" stroke-width="0.8"/>
-      <text x="12" y="19" fill="#ff6b00" font-size="10.5" font-weight="800" letter-spacing="0.1em">AERO // FRONTEND</text>
+      <text x="12" y="19" fill="#fcd700" font-size="10" font-weight="800" letter-spacing="0.1em">LOGIC // ACTIVE</text>
 
-      <!-- Chips -->
       <g transform="translate(12, 44)">
-        <rect x="0" y="0" width="78" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="39" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">React.js</text>
+        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#fcd700" stroke-width="1"/>
+        <text x="41" y="17" fill="#fcd700" font-size="11" font-weight="700" text-anchor="middle">JavaScript</text>
 
-        <rect x="88" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="129" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Next.js 14</text>
+        <rect x="90" y="0" width="80" height="26" rx="6" fill="#080e1c" stroke="#39d353" stroke-width="1"/>
+        <text x="130" y="17" fill="#39d353" font-size="11" font-weight="700" text-anchor="middle">Python</text>
 
-        <rect x="0" y="36" width="94" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="47" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Tailwind CSS</text>
+        <rect x="0" y="36" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">ES6+ &amp; DOM Scripting</text>
 
-        <rect x="104" y="36" width="66" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="137" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">HTML/CSS</text>
+        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Automation &amp; Scripts</text>
 
-        <rect x="0" y="72" width="86" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="43" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Three.js</text>
-
-        <rect x="96" y="72" width="74" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="133" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">SVG Motion</text>
-
-        <text x="0" y="132" fill="#6880a4" font-size="9" font-weight="700">DOWNFORCE: ULTRA SMOOTH</text>
+        <text x="0" y="132" fill="#39d353" font-size="9" font-weight="800">STATUS: ON TRACK // ACTIVE</text>
       </g>
     </g>
 
-    <!-- Department 3: TELEMETRY // AI & DATA -->
+    <!-- Department 3: PIT STOP ACCELERATION // LEARNING -->
     <g transform="translate(416, 0)">
       <rect width="195" height="195" rx="12" fill="url(#chipBg)" stroke="#1f3354" stroke-width="1.2" class="glow-chip3"/>
       <path d="M0 0 L195 0 L195 30 L0 30 Z" fill="#0a1222"/>
       <line x1="0" y1="30" x2="195" y2="30" stroke="#1f3354" stroke-width="0.8"/>
-      <text x="12" y="19" fill="#fcd700" font-size="10.5" font-weight="800" letter-spacing="0.1em">TELEMETRY // AI &amp; ML</text>
+      <text x="12" y="19" fill="#00f0ff" font-size="10" font-weight="800" letter-spacing="0.1em">ROADMAP // IN PROGRESS</text>
 
-      <!-- Chips -->
       <g transform="translate(12, 44)">
-        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="41" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">PyTorch</text>
+        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
+        <text x="41" y="17" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">React.js</text>
 
-        <rect x="92" y="0" width="78" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="131" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">OpenCV</text>
+        <rect x="90" y="0" width="80" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
+        <text x="130" y="17" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">Next.js</text>
 
-        <rect x="0" y="36" width="94" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="47" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Vision AI</text>
+        <rect x="0" y="36" width="82" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
+        <text x="41" y="53" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">TypeScript</text>
 
-        <rect x="104" y="36" width="66" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="137" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">NumPy</text>
+        <rect x="90" y="36" width="80" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
+        <text x="130" y="53" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">C++</text>
 
-        <rect x="0" y="72" width="94" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="47" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">CUDA Accel</text>
+        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
+        <text x="85" y="89" fill="#8da2c0" font-size="10.5" font-weight="700" text-anchor="middle">Full-Stack Frameworks</text>
 
-        <rect x="104" y="72" width="66" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="137" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">LangChain</text>
-
-        <text x="0" y="132" fill="#6880a4" font-size="9" font-weight="700">INFERENCE: 100 TFLOPS</text>
+        <text x="0" y="132" fill="#fcd700" font-size="9" font-weight="800">STATUS: TRAINING LAPS</text>
       </g>
     </g>
 
-    <!-- Department 4: GARAGE // DEVOPS & INFRA -->
+    <!-- Department 4: LABS & TOOLS // COLLABORATION -->
     <g transform="translate(624, 0)">
       <rect width="195" height="195" rx="12" fill="url(#chipBg)" stroke="#1f3354" stroke-width="1.2" class="glow-chip4"/>
       <path d="M0 0 L195 0 L195 30 L0 30 Z" fill="#0a1222"/>
       <line x1="0" y1="30" x2="195" y2="30" stroke="#1f3354" stroke-width="0.8"/>
-      <text x="12" y="19" fill="#00f0ff" font-size="10.5" font-weight="800" letter-spacing="0.1em">GARAGE // DEVOPS</text>
+      <text x="12" y="19" fill="#a855f7" font-size="10" font-weight="800" letter-spacing="0.1em">LABS // DEV TOOLS</text>
 
-      <!-- Chips -->
       <g transform="translate(12, 44)">
-        <rect x="0" y="0" width="76" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="38" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Docker</text>
+        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#39d353" stroke-width="1"/>
+        <text x="41" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Git / GitHub</text>
 
-        <rect x="86" y="0" width="84" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="128" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Git / GitHub</text>
+        <rect x="90" y="0" width="80" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="130" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">VS Code</text>
 
-        <rect x="0" y="36" width="86" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="43" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Linux OS</text>
+        <rect x="0" y="36" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">UI / UX Prototyping</text>
 
-        <rect x="96" y="36" width="74" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="133" y="53" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">FastAPI</text>
+        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="89" fill="#a855f7" font-size="10.5" font-weight="700" text-anchor="middle">AI &amp; Geospatial (SIH)</text>
 
-        <rect x="0" y="72" width="102" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="51" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">GH Actions</text>
-
-        <rect x="112" y="72" width="58" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
-        <text x="141" y="89" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">CI / CD</text>
-
-        <text x="0" y="132" fill="#6880a4" font-size="9" font-weight="700">PIT STOP: ZERO DOWNTIME</text>
+        <text x="0" y="132" fill="#00f0ff" font-size="9" font-weight="800">STATUS: INNOVATION R&amp;D</text>
       </g>
     </g>
   </g>

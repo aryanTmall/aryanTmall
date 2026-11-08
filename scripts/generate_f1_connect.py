@@ -119,7 +119,7 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="220" viewBo
     </a>
 
     <!-- Link Card 2: LINKEDIN (x: 270, y: 0) -->
-    <a href="https://linkedin.com" target="_blank">
+    <a href="https://www.linkedin.com/in/aryan-mall-0b519442a" target="_blank">
       <g transform="translate(270, 0)">
         <rect width="255" height="82" rx="10" fill="url(#cardGrad)" stroke="#253a5c" stroke-width="1.2"/>
         <circle cx="28" cy="41" r="18" fill="#060a14" stroke="#0077b5" stroke-width="1"/>

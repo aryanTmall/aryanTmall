@@ -3,32 +3,63 @@
 <!-- =================================================================== -->
 <!-- 01 // 🏎️ FORMULA 1 COCKPIT HUD & VIEWFINDER HERO                     -->
 <!-- =================================================================== -->
-<img src="./hero.svg?v=1" alt="Aryan Mall — Oracle Red Bull Racing F1 Telemetry Hero" width="100%"/>
+<img src="./hero.svg?v=2" alt="Aryan Mall — Oracle Red Bull Racing F1 Telemetry Hero" width="100%"/>
 
 <br/><br/>
 
 <!-- =================================================================== -->
 <!-- 02 // 🏁 RACE CRAFT & DRIVER TELEMETRY (WHAT I BUILD + CAROUSEL)    -->
 <!-- =================================================================== -->
-<img src="./about-f1.svg?v=1" alt="Race Craft and Driver Telemetry Carousel" width="100%"/>
+<img src="./about-f1.svg?v=2" alt="Race Craft and Driver Telemetry Carousel" width="100%"/>
 
 <br/><br/>
 
 <!-- =================================================================== -->
 <!-- 03 // ⚡ V6 TURBO HYBRID TECH ORBIT & PIT STOP CHIP GRID             -->
 <!-- =================================================================== -->
-<img src="./stack.svg?v=1" alt="V6 Turbo Hybrid Tech Orbit & Pit Stop Chip Grid" width="100%"/>
+<img src="./stack.svg?v=2" alt="V6 Turbo Hybrid Tech Orbit & Pit Stop Chip Grid" width="100%"/>
 
 <br/><br/>
 
 <!-- =================================================================== -->
 <!-- 04 // 🪪 FIA SUPER LICENSE PADDOCK PASS & PIT WALL DASHBOARD        -->
 <!-- =================================================================== -->
-<img src="./id-dashboard.svg?v=1" alt="FIA Super License Lanyard Badge & Pit Wall Telemetry Dashboard" width="100%"/>
+<img src="./id-dashboard.svg?v=2" alt="FIA Super License Lanyard Badge & Pit Wall Telemetry Dashboard" width="100%"/>
 
 <br/><br/>
 
 </div>
+
+## 🏆 FIA Super License Honors & Milestones
+
+<table>
+  <tr>
+    <th>Championship Milestone</th>
+    <th>Organization / Event</th>
+    <th>Achievement &amp; Role</th>
+    <th align="center">Paddock Status</th>
+  </tr>
+  <tr>
+    <td><b>Smart India Hackathon (SIH) 2026</b></td>
+    <td>Sushant University / National Hackathon</td>
+    <td><b>Team Leader // ThermoIntel</b> — Selected as designated university team tackling geospatial thermal anomaly mapping and urban heat mitigation.</td>
+    <td align="center"><b>P1 Qualified 🥇</b></td>
+  </tr>
+  <tr>
+    <td><b>NIAT Bootcamp Winner</b></td>
+    <td>Sushant University Innovation Sprint</td>
+    <td><b>1st Place Winner</b> — Rapid ideation, architectural scoping, and sprint prototyping under tight time constraints.</td>
+    <td align="center"><b>Champion 🏆</b></td>
+  </tr>
+  <tr>
+    <td><b>Academic Paddock</b></td>
+    <td>Sushant University (Gurugram, IN)</td>
+    <td>Undergraduate Computer Science &amp; Software Foundations — Building practical prototypes from first principles.</td>
+    <td align="center"><b>On Track 🟢</b></td>
+  </tr>
+</table>
+
+<br/>
 
 ## 🏎️ Championship Grand Prix Projects
 
@@ -37,7 +68,35 @@
     <th>Championship Project</th>
     <th>System Architecture &amp; Mission</th>
     <th>Telemetry Stack</th>
-    <th align="center">Paddock Status</th>
+    <th align="center">Grid Position</th>
+  </tr>
+  <tr>
+    <td>
+      <b>ThermoIntel</b>
+    </td>
+    <td>
+      Geospatial Thermal Intelligence &amp; Urban Heat Anomaly Visualizer. Multi-spectral satellite thermal band analysis and interactive telemetry map simulation.
+    </td>
+    <td>
+      <code>Python</code> <code>Geospatial</code> <code>HTML/CSS</code> <code>JavaScript</code>
+    </td>
+    <td align="center">
+      <b>SIH 2026 Lead 🏁</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>TrustLocal</b>
+    </td>
+    <td>
+      Community-verified neighborhood service discovery platform replacing fraudulent reviews with geo-fenced vouching and transparent trust indices.
+    </td>
+    <td>
+      <code>HTML5</code> <code>CSS3</code> <code>JavaScript</code> <code>UI/UX</code>
+    </td>
+    <td align="center">
+      <b>Pole Position 🏎️</b>
+    </td>
   </tr>
   <tr>
     <td>
@@ -46,26 +105,10 @@
       </a>
     </td>
     <td>
-      Specialised AI generative engine for logo marks and typography rules. Translates business constraints into geometric symbols, clear-space lockups, and production brand assets.
+      Generative brand and symbol generator converting design tokens and clear-space lockups into production-ready vector assets.
     </td>
     <td>
-      <code>Next.js</code> <code>Python</code> <code>PyTorch</code> <code>Vision AI</code>
-    </td>
-    <td align="center">
-      <b>P1 Pole Position 🏆</b>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/aryanTmall/Apex-Coderss">
-        <b>Apex-Coderss</b>
-      </a>
-    </td>
-    <td>
-      High-velocity algorithmic challenge solver, advanced data structures, and competitive programming execution engine engineered for maximum runtime velocity.
-    </td>
-    <td>
-      <code>C++</code> <code>Algorithms</code> <code>Problem Solving</code>
+      <code>Python</code> <code>Automation</code> <code>Web Interface</code>
     </td>
     <td align="center">
       <b>Fastest Lap 🟣</b>
@@ -88,21 +131,21 @@
 
 <p><i>Every commit builds another skyscraper on the night skyline — reconstructed daily by GitHub Actions.</i></p>
 
-<img src="./profile-3d-contrib/profile-night-view.svg?v=1" alt="3D Contribution Night City" width="100%"/>
+<img src="./profile-3d-contrib/profile-night-view.svg?v=2" alt="3D Contribution Night City" width="100%"/>
 
 <br/><br/>
 
 <!-- =================================================================== -->
 <!-- 06 // 🏆 PODIUM FINISH & TEAM RADIO (CONNECT)                      -->
 <!-- =================================================================== -->
-<img src="./connect.svg?v=1" alt="Aryan Mall — The Podium Connect Banner" width="100%"/>
+<img src="./connect.svg?v=2" alt="Aryan Mall — The Podium Connect Banner" width="100%"/>
 
 <br/>
 
 <a href="https://github.com/aryanTmall">
   <img src="https://img.shields.io/badge/GitHub-aryanTmall-ff1801?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub"/>
 </a>
-<a href="https://linkedin.com">
+<a href="https://www.linkedin.com/in/aryan-mall-0b519442a">
   <img src="https://img.shields.io/badge/LinkedIn-Aryan_Mall-0a1226?style=for-the-badge&logo=linkedin&logoColor=00f0ff" alt="LinkedIn"/>
 </a>
 <a href="https://aryantmall.github.io">
@@ -118,6 +161,8 @@
 
 <br/><br/>
 
-<b>"Simply lovely, mate! Full throttle, never settle."</b> 🦁🏎️💨
+<p align="center">
+  <sub>Engineered with precision for <b>Aryan Mall</b> · Inspired by Oracle Red Bull Racing #1 Max Verstappen</sub>
+</p>
 
 </div>
