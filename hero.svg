@@ -190,23 +190,29 @@
 
   <!-- Cycling Role Lines (SMIL Crossfade) -->
   <g transform="translate(38, 182)">
-    <!-- Role 1 -->
+    <!-- Role 1: Google Gemini Student Ambassador -->
     <text class="role-text" opacity="0">
-      ⚡ WEB CRAFTER // HTML · CSS · JS · PYTHON
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.30;0.34" dur="10.5s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="6;0;0;-6" keyTimes="0;0.08;0.30;0.34" dur="10.5s" repeatCount="indefinite"/>
+      ⚡ GOOGLE GEMINI STUDENT AMBASSADOR 2026
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.22;0.25" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="6;0;0;-6" keyTimes="0;0.06;0.22;0.25" dur="12s" repeatCount="indefinite"/>
     </text>
-    <!-- Role 2 -->
+    <!-- Role 2: Tech4Hack Chapter Lead -->
     <text class="role-text" opacity="0">
-      🏆 SIH 2026 TEAM LEADER // THERMOINTEL
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.34;0.42;0.63;0.67" dur="10.5s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="6;0;0;-6" keyTimes="0.34;0.42;0.63;0.67" dur="10.5s" repeatCount="indefinite"/>
+      🚀 TECH4HACK CHAPTER LEAD // DEVREL &amp; COMMUNITY
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.25;0.31;0.47;0.50" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="6;0;0;-6" keyTimes="0.25;0.31;0.47;0.50" dur="12s" repeatCount="indefinite"/>
     </text>
-    <!-- Role 3 -->
+    <!-- Role 3: SIH 2026 Lead & Hackathons -->
     <text class="role-text" opacity="0">
-      🏎️ RAPID PROTOTYPER &amp; MAX VERSTAPPEN #1 FAN
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.67;0.75;0.96;1" dur="10.5s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="6;0;0;-6" keyTimes="0.67;0.75;0.96;1" dur="10.5s" repeatCount="indefinite"/>
+      🏆 SIH 2026 TEAM LEADER // TOP 10 GRAVITON
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.50;0.56;0.72;0.75" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="6;0;0;-6" keyTimes="0.50;0.56;0.72;0.75" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <!-- Role 4: B.Tech CSE AI/ML -->
+    <text class="role-text" opacity="0">
+      🏁 B.TECH CSE (AI/ML) · SUSHANT UNIV × INTELLIPAAT
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.75;0.81;0.97;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="6;0;0;-6" keyTimes="0.75;0.81;0.97;1" dur="12s" repeatCount="indefinite"/>
     </text>
   </g>
 
@@ -222,24 +228,24 @@
     </text>
   </g>
 
-  <!-- Live Telemetry Sector Strip (With College Status) -->
+  <!-- Live Telemetry Sector Strip (With College Status & Roles) -->
   <g transform="translate(38, 290)">
     <rect width="520" height="44" rx="10" fill="#060b14" stroke="#253a5c" stroke-width="1"/>
     <!-- Sector 1: Campus -->
     <text x="18" y="18" fill="#6880a4" font-size="9.5" font-weight="700">CAMPUS</text>
-    <text x="18" y="34" fill="#a855f7" font-size="12" font-weight="900">SUSHANT UNIV</text>
+    <text x="18" y="34" fill="#a855f7" font-size="11.5" font-weight="900">SUSHANT UNIV</text>
 
-    <!-- Sector 2: Core Tech -->
-    <text x="145" y="18" fill="#6880a4" font-size="9.5" font-weight="700">CORE TECH</text>
-    <text x="145" y="34" fill="#00f0ff" font-size="12" font-weight="900">HTML·CSS·JS·PY</text>
+    <!-- Sector 2: Leadership -->
+    <text x="135" y="18" fill="#6880a4" font-size="9.5" font-weight="700">LEADERSHIP</text>
+    <text x="135" y="34" fill="#00f0ff" font-size="11.5" font-weight="900">GEMINI · TECH4HACK</text>
 
-    <!-- Sector 3: Top Speed -->
-    <text x="272" y="18" fill="#6880a4" font-size="9.5" font-weight="700">TOP SPEED</text>
-    <text x="272" y="34" fill="#fcd700" font-size="12" font-weight="900">345 KM/H (P1)</text>
+    <!-- Sector 3: Core Tech -->
+    <text x="278" y="18" fill="#6880a4" font-size="9.5" font-weight="700">CORE TECH</text>
+    <text x="278" y="34" fill="#fcd700" font-size="11.5" font-weight="900">AI/ML · PY · WEB</text>
 
     <!-- Sector 4: College Standing / Year (Replaced Tyre Strat) -->
-    <text x="390" y="18" fill="#6880a4" font-size="9.5" font-weight="700">COLLEGE STATUS</text>
-    <text x="390" y="34" fill="#39d353" font-size="12" font-weight="900">🏁 1ST YR // SEM 1</text>
+    <text x="396" y="18" fill="#6880a4" font-size="9.5" font-weight="700">COLLEGE STATUS</text>
+    <text x="396" y="34" fill="#39d353" font-size="11.5" font-weight="900">🏁 1ST YR // SEM 1</text>
   </g>
 
   <!-- RIGHT COCKPIT VIEWFINDER (DRIVER VISOR & TELEMETRY) -->

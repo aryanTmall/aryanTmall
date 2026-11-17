@@ -109,7 +109,7 @@
     </a>
 
     <!-- Link Card 2: LINKEDIN (x: 270, y: 0) -->
-    <a href="https://www.linkedin.com/in/aryan-mall-0b519442a" target="_blank">
+    <a href="https://www.linkedin.com/in/aryan-mall/" target="_blank">
       <g transform="translate(270, 0)">
         <rect width="255" height="82" rx="10" fill="url(#cardGrad)" stroke="#253a5c" stroke-width="1.2"/>
         <circle cx="28" cy="41" r="18" fill="#060a14" stroke="#0077b5" stroke-width="1"/>
@@ -143,14 +143,14 @@
     </a>
 
     <!-- Link Card 4: DIRECT EMAIL (x: 270, y: 94) -->
-    <a href="mailto:aryanfreefire15@gmail.com">
+    <a href="mailto:aryanmall1547@gmail.com">
       <g transform="translate(270, 94)">
         <rect width="255" height="82" rx="10" fill="url(#cardGrad)" stroke="#253a5c" stroke-width="1.2"/>
         <circle cx="28" cy="41" r="18" fill="#060a14" stroke="#ff1801" stroke-width="1"/>
         <text x="28" y="47" fill="#ff1801" font-size="16" text-anchor="middle">✉️</text>
 
         <text x="56" y="34" fill="#ffffff" font-size="13" font-weight="800">TEAM RADIO // EMAIL</text>
-        <text x="56" y="52" fill="#8da2c0" font-size="10.5">Direct line: aryanfreefire15@gmail.com</text>
+        <text x="56" y="52" fill="#8da2c0" font-size="10.5">Direct line: aryanmall1547@gmail.com</text>
 
         <g class="nudge-arrow" transform="translate(225, 41)">
           <circle cx="0" cy="0" r="10" fill="#0c1626" stroke="#ff1801" stroke-width="1"/>
