@@ -2,7 +2,10 @@
 """
 Generate the Formula 1 & Max Verstappen #1 Cockpit Telemetry Hero SVG (hero.svg).
 Pure self-contained SVG + SMIL / CSS keyframe animations.
-Accurately displays Aryan Mall's F1 cockpit avatar and verified skills.
+Features:
+- Iconic Formula 1 Checkered Race Flag background pattern & finish-line ribbon.
+- Aryan Mall's F1 cockpit avatar with waving checkered race flag backdrop.
+- Live telemetry sector strip featuring College Standing: 1ST YR // SEM 1 (replacing tyre strat).
 """
 import base64
 import os
@@ -44,17 +47,27 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
 
     <!-- Viewfinder Halo Glow -->
     <radialGradient id="cockpitGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.3"/>
-      <stop offset="70%" stop-color="#ff1801" stop-opacity="0.1"/>
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#ff1801" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#05080f" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Carbon Fiber Weave Pattern -->
-    <pattern id="carbonWeave" width="12" height="12" patternUnits="userSpaceOnUse">
-      <rect width="12" height="12" fill="#060911"/>
-      <path d="M0 0 L6 6 M6 0 L0 6 M6 6 L12 12 M12 6 L6 12" stroke="#10192b" stroke-width="0.8" opacity="0.65"/>
-      <rect x="0" y="0" width="6" height="6" fill="#0c1322" opacity="0.4"/>
-      <rect x="6" y="6" width="6" height="6" fill="#0c1322" opacity="0.4"/>
+    <!-- Formula 1 Checkered Race Flag Pattern -->
+    <pattern id="checkeredRaceFlag" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(-15) skewX(10)">
+      <rect width="18" height="18" fill="#060912"/>
+      <rect x="18" width="18" height="18" fill="#141f35" opacity="0.8"/>
+      <rect y="18" width="18" height="18" fill="#141f35" opacity="0.8"/>
+      <rect x="18" y="18" width="18" height="18" fill="#060912"/>
+      <line x1="0" y1="18" x2="36" y2="18" stroke="#1d2e4d" stroke-width="0.5" opacity="0.45"/>
+      <line x1="18" y1="0" x2="18" y2="36" stroke="#1d2e4d" stroke-width="0.5" opacity="0.45"/>
+    </pattern>
+
+    <!-- Grand Prix Finish Line Checkered Ribbon -->
+    <pattern id="finishLineRibbon" width="16" height="6" patternUnits="userSpaceOnUse">
+      <rect width="8" height="3" fill="#ffffff" opacity="0.9"/>
+      <rect x="8" width="8" height="3" fill="#0a0f1b"/>
+      <rect y="3" width="8" height="3" fill="#0a0f1b"/>
+      <rect x="8" y="3" width="8" height="3" fill="#ffffff" opacity="0.9"/>
     </pattern>
 
     <!-- Clip Path for Driver Visor / Photo (in local coordinates of container <g>) -->
@@ -114,10 +127,15 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
     }}
   </style>
 
-  <!-- Base Chassis -->
+  <!-- Base Chassis with Formula 1 Checkered Race Flag Pattern -->
   <rect width="860" height="360" rx="16" fill="url(#carbonBg)"/>
-  <rect width="860" height="360" rx="16" fill="url(#carbonWeave)"/>
-  <rect x="0.5" y="0.5" width="859" height="359" rx="16" fill="none" stroke="#ff1801" stroke-width="1.2" stroke-opacity="0.7"/>
+  <rect width="860" height="360" rx="16" fill="url(#checkeredRaceFlag)"/>
+
+  <!-- Grand Prix Finish Line Checkered Ribbon Under Top Bar -->
+  <rect x="0" y="38" width="860" height="5" fill="url(#finishLineRibbon)"/>
+
+  <!-- Outer Neon Racing Border -->
+  <rect x="0.5" y="0.5" width="859" height="359" rx="16" fill="none" stroke="#ff1801" stroke-width="1.2" stroke-opacity="0.8"/>
 
   <!-- Top Telemetry Bar & Red Bull Racing Livery Band -->
   <path d="M0 0 L860 0 L860 38 L0 38 Z" fill="#080d17"/>
@@ -225,21 +243,24 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
     </text>
   </g>
 
-  <!-- Live Telemetry Sector Strip -->
+  <!-- Live Telemetry Sector Strip (With College Status) -->
   <g transform="translate(38, 290)">
     <rect width="520" height="44" rx="10" fill="#060b14" stroke="#253a5c" stroke-width="1"/>
-    <!-- Sector 1 -->
-    <text x="20" y="18" fill="#6880a4" font-size="10" font-weight="700">CAMPUS</text>
-    <text x="20" y="34" fill="#a855f7" font-size="12" font-weight="900">SUSHANT UNIV</text>
-    <!-- Sector 2 -->
-    <text x="155" y="18" fill="#6880a4" font-size="10" font-weight="700">CORE TECH</text>
-    <text x="155" y="34" fill="#00f0ff" font-size="12" font-weight="900">HTML·CSS·JS·PY</text>
-    <!-- Top Speed -->
-    <text x="295" y="18" fill="#6880a4" font-size="10" font-weight="700">TOP SPEED</text>
-    <text x="295" y="34" fill="#fcd700" font-size="12" font-weight="900">345 KM/H (P1)</text>
-    <!-- Tyre Compound -->
-    <text x="415" y="18" fill="#6880a4" font-size="10" font-weight="700">TYRE STRAT</text>
-    <text x="415" y="34" fill="#ff1801" font-size="12" font-weight="900">🔴 SOFT (L1)</text>
+    <!-- Sector 1: Campus -->
+    <text x="18" y="18" fill="#6880a4" font-size="9.5" font-weight="700">CAMPUS</text>
+    <text x="18" y="34" fill="#a855f7" font-size="12" font-weight="900">SUSHANT UNIV</text>
+
+    <!-- Sector 2: Core Tech -->
+    <text x="145" y="18" fill="#6880a4" font-size="9.5" font-weight="700">CORE TECH</text>
+    <text x="145" y="34" fill="#00f0ff" font-size="12" font-weight="900">HTML·CSS·JS·PY</text>
+
+    <!-- Sector 3: Top Speed -->
+    <text x="272" y="18" fill="#6880a4" font-size="9.5" font-weight="700">TOP SPEED</text>
+    <text x="272" y="34" fill="#fcd700" font-size="12" font-weight="900">345 KM/H (P1)</text>
+
+    <!-- Sector 4: College Standing / Year (Replaced Tyre Strat) -->
+    <text x="390" y="18" fill="#6880a4" font-size="9.5" font-weight="700">COLLEGE STATUS</text>
+    <text x="390" y="34" fill="#39d353" font-size="12" font-weight="900">🏁 1ST YR // SEM 1</text>
   </g>
 
   <!-- RIGHT COCKPIT VIEWFINDER (DRIVER VISOR & TELEMETRY) -->
@@ -254,7 +275,7 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
     <!-- Viewfinder Background Window -->
     <rect x="15" y="45" width="180" height="180" rx="22" fill="#080e1a" stroke="#253a5c" stroke-width="1.5"/>
 
-    <!-- Embedded Driver Avatar (Now clipped cleanly to exact inner frame) -->
+    <!-- Embedded Driver Avatar (Now with Waving Checkered Race Flag Background) -->
     <image href="data:image/png;base64,{photo_b64}" x="20" y="50" width="170" height="170" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarVisor)"/>
 
     <!-- Driver Visor Aerodynamic Border -->

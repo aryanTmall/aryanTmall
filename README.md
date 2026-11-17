@@ -3,7 +3,7 @@
 <!-- =================================================================== -->
 <!-- 01 // 🏎️ FORMULA 1 COCKPIT HUD & VIEWFINDER HERO                     -->
 <!-- =================================================================== -->
-<img src="./hero.svg?v=2" alt="Aryan Mall — Oracle Red Bull Racing F1 Telemetry Hero" width="100%"/>
+<img src="./hero.svg?v=3" alt="Aryan Mall — Oracle Red Bull Racing F1 Telemetry Hero" width="100%"/>
 
 <br/><br/>
 
@@ -24,7 +24,7 @@
 <!-- =================================================================== -->
 <!-- 04 // 🪪 FIA SUPER LICENSE PADDOCK PASS & PIT WALL DASHBOARD        -->
 <!-- =================================================================== -->
-<img src="./id-dashboard.svg?v=2" alt="FIA Super License Lanyard Badge & Pit Wall Telemetry Dashboard" width="100%"/>
+<img src="./id-dashboard.svg?v=3" alt="FIA Super License Lanyard Badge & Pit Wall Telemetry Dashboard" width="100%"/>
 
 <br/><br/>
 
