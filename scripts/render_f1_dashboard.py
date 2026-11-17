@@ -252,10 +252,10 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="52
             ARYAN MALL
           </text>
           <text x="0" y="18" fill="#fcd700" font-size="11" font-weight="800" letter-spacing="0.08em">
-            WEB CRAFTER &amp; CS EXPLORER
+            B.TECH CSE (AI/ML) · BUILDER
           </text>
           <text x="0" y="32" fill="#8da2c0" font-size="10" font-weight="600">
-            Sushant University // SIH 2026 Team Lead
+            Sushant Univ × Intellipaat // SIH 2026 Lead
           </text>
         </g>
 

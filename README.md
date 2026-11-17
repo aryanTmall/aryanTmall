@@ -52,10 +52,16 @@
     <td align="center"><b>Champion 🏆</b></td>
   </tr>
   <tr>
-    <td><b>Academic Paddock</b></td>
-    <td>Sushant University (Gurugram, IN)</td>
-    <td>Undergraduate Computer Science &amp; Software Foundations — Building practical prototypes from first principles.</td>
+    <td><b>Academic Paddock (Degree)</b></td>
+    <td>Sushant University × Intellipaat</td>
+    <td><b>B.Tech in Computer Science &amp; Engineering (CSE)</b> — Specialization in Artificial Intelligence, Machine Learning &amp; Data Science (Cohort 2026–2030).</td>
     <td align="center"><b>On Track 🟢</b></td>
+  </tr>
+  <tr>
+    <td><b>Early Builder Track</b></td>
+    <td>Sushant University Innovation Lab</td>
+    <td><b>Hands-on Software Exploration</b> — Building real-world web prototypes (ThermoIntel, TrustLocal) and practical algorithms from first principles within initial semester.</td>
+    <td align="center"><b>Active Grid 🏎️</b></td>
   </tr>
 </table>
 
