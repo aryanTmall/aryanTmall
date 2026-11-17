@@ -17,7 +17,7 @@
 <!-- =================================================================== -->
 <!-- 03 // ⚡ V6 TURBO HYBRID TECH ORBIT & PIT STOP CHIP GRID             -->
 <!-- =================================================================== -->
-<img src="./stack.svg?v=2" alt="V6 Turbo Hybrid Tech Orbit & Pit Stop Chip Grid" width="100%"/>
+<img src="./stack.svg?v=3" alt="V6 Turbo Hybrid Tech Orbit & Pit Stop Chip Grid" width="100%"/>
 
 <br/><br/>
 
