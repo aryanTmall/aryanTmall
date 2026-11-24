@@ -254,14 +254,12 @@
 
 ## 🛠️ Telemetry & Engineering Skills
 
-```
+```text
 AI & MACHINE LEARNING ──── Machine Learning · Prompt Engineering · Data Analysis · Python · Geospatial AI
 FULL-STACK & APIS ──────── Next.js 16 (Turbopack) · TypeScript · React 19 · FastAPI · Flask · Supabase (PostgreSQL)
 WEB ARCHITECTURE ───────── Semantic HTML5 · Responsive CSS3 · Modern JavaScript (ES6+) · UI/UX Design · Vitest
 DEVREL & LEADERSHIP ────── Google Gemini Ambassador (14460) · Tech4Hack Chapter Lead · Team Leadership (Apex Coders)
 COMMUNITY & GROWTH ─────── Technical Community Management · Event Management · Developer Relations · Growth
-MODERN TOOLING ─────────── Git · GitHub · VS Code · Vibe Coding · GitHub Copilot · Replit Agent
-```
 MODERN TOOLING ─────────── Git · GitHub · VS Code · Vibe Coding · GitHub Copilot · Replit Agent
 ```
 
