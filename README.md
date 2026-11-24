@@ -30,6 +30,11 @@
 
 </div>
 
+> **Driver Briefing // Mission Statement**  
+> *"I'm a B.Tech Computer Science student building practical software in Artificial Intelligence, Machine Learning, Data Science, and modern Web platforms. I enjoy learning by building practical projects and exploring how technology can solve real-world problems. Part of Team Apex Coders on ThermoIntel (Smart India Hackathon 2026), Google Gemini Student Ambassador 2026 (GID: 14460), and Chapter Lead at Tech4Hack Sushant University."*
+
+<br/>
+
 ## 🏆 FIA Super License Honors, Leadership & Milestones
 
 <table>
@@ -64,10 +69,22 @@
     <td align="center"><b>Top 10 Podium 🏆</b></td>
   </tr>
   <tr>
+    <td><b>HexWartz Hackathon 2026</b></td>
+    <td>Sharda University, Agra</td>
+    <td><b>24-Hour National Hackathon</b> — Represented Sushant University as part of Team Apex Coders in an intense 24-hour national technical sprint.</td>
+    <td align="center"><b>National Finalist 🏰</b></td>
+  </tr>
+  <tr>
     <td><b>NIAT Bootcamp Winner</b></td>
     <td>Sushant University Innovation Sprint</td>
     <td><b>1st Place Winner</b> — Rapid ideation, architectural scoping, and sprint prototyping under tight time constraints.</td>
     <td align="center"><b>Champion 🥇</b></td>
+  </tr>
+  <tr>
+    <td><b>ChatGPT AI QuizOff</b></td>
+    <td>The Devengers</td>
+    <td><b>AI Problem Solving &amp; Logic</b> — Competitive assessment testing artificial intelligence principles and emerging tech paradigms.</td>
+    <td align="center"><b>Qualified 🤖</b></td>
   </tr>
   <tr>
     <td><b>Social Media &amp; Growth</b></td>
@@ -84,7 +101,7 @@
   <tr>
     <td><b>Early Builder Track</b></td>
     <td>Sushant University Innovation Lab</td>
-    <td><b>Hands-on Software Exploration</b> — Building real-world web prototypes (ThermoIntel, TrustLocal) and practical algorithms from first principles within initial semester.</td>
+    <td><b>Hands-on Software Exploration</b> — Building real-world web prototypes (Verdict, ThermoIntel, TrustLocal) and practical algorithms from first principles within initial semester.</td>
     <td align="center"><b>Active Grid 🏎️</b></td>
   </tr>
 </table>
@@ -99,6 +116,18 @@
     <th>Issuing Authority / Host</th>
     <th>Credential ID / Details</th>
     <th align="center">Date</th>
+  </tr>
+  <tr>
+    <td><b>HexWartz Hackathon 2026</b></td>
+    <td>Sharda University, Agra</td>
+    <td><code>93f238dc-b3c0-4f1e-a88a-1f6e408ac1a2</code> (Team Apex Coders)</td>
+    <td align="center">Nov 2026</td>
+  </tr>
+  <tr>
+    <td><b>ChatGPT AI QuizOff</b></td>
+    <td>The Devengers</td>
+    <td><code>329f8e38-2f04-4207-85ca-2f233123513e</code></td>
+    <td align="center">Nov 2026</td>
   </tr>
   <tr>
     <td><b>CYPHER-DigiWeek</b></td>
@@ -145,16 +174,48 @@
   </tr>
   <tr>
     <td>
-      <a href="https://thermointel-website.onrender.com"><b>ThermoIntel</b></a>
+      <a href="https://github.com/aryanTmall/Verdict"><b>Verdict</b></a>
+      <br/>
+      <a href="https://verdict-u9pt.onrender.com/"><small>🌐 Live App</small></a>
     </td>
     <td>
-      <b>AI-Powered Geospatial Thermal Intelligence</b> (SIH 2026 · Problem Statement SIH26162). Investigating satellite-detected thermal anomalies using NASA FIRMS observations, land-use data, and AI-assisted classification to differentiate wildfires, industrial flares, and urban heat sources.
+      <b>Buyer-Side AI Purchasing &amp; Ownership Intelligence Engine</b> ("See beyond the buy"). Cross-examines marketing claims against real owner evidence, calculates total cost of ownership (TCO), arbitrates cross-marketplace prices, executes bounded sale autopilots, and scans physical goods across 11 core industries with zero vibe math. 39 unit tests passing.
+    </td>
+    <td>
+      <code>Next.js 16</code> <code>Turbopack</code> <code>TypeScript</code> <code>Vitest</code> <code>Node 22</code> <code>Render</code>
+    </td>
+    <td align="center">
+      <b>Pole Position 🏆</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://thermointel-x-1.onrender.com"><b>ThermoIntel</b></a>
+      <br/>
+      <small>Apex Coders // SIH 2026</small>
+    </td>
+    <td>
+      <b>AI-Powered Geospatial Thermal Intelligence</b> (Smart India Hackathon 2026 · Problem Statement SIH26162). Investigating satellite-detected thermal anomalies using NASA FIRMS observations, land-use data, and AI-assisted classification to differentiate wildfires, industrial flares, and urban heat sources.
     </td>
     <td>
       <code>Python</code> <code>FastAPI</code> <code>Geospatial</code> <code>NASA FIRMS</code> <code>HTML/CSS/JS</code>
     </td>
     <td align="center">
       <b>SIH 2026 Lead 🏁</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/aryanTmall/campus_manager"><b>Campus Manager</b></a>
+    </td>
+    <td>
+      <b>Full-Scale Campus Events &amp; Registration Backend</b>. Event management, participant registration, secure Supabase authentication, and PostgreSQL Row-Level Security (RLS) data policies.
+    </td>
+    <td>
+      <code>Python</code> <code>Flask</code> <code>Supabase</code> <code>PostgreSQL RLS</code> <code>REST API</code>
+    </td>
+    <td align="center">
+      <b>Paddock Backend ⚙️</b>
     </td>
   </tr>
   <tr>
@@ -168,7 +229,7 @@
       <code>React 19</code> <code>TypeScript</code> <code>Vite 6</code> <code>Tailwind v4</code> <code>UI/UX</code>
     </td>
     <td align="center">
-      <b>Pole Position 🏎️</b>
+      <b>Podium Finisher 🏎️</b>
     </td>
   </tr>
   <tr>
@@ -195,9 +256,12 @@
 
 ```
 AI & MACHINE LEARNING ──── Machine Learning · Prompt Engineering · Data Analysis · Python · Geospatial AI
-WEB ARCHITECTURE ───────── Semantic HTML5 · Responsive CSS3 · Modern JavaScript (ES6+) · UI/UX Design
-DEVREL & LEADERSHIP ────── Google Gemini Ambassador (14460) · Tech4Hack Chapter Lead · Team Leadership
+FULL-STACK & APIS ──────── Next.js 16 (Turbopack) · TypeScript · React 19 · FastAPI · Flask · Supabase (PostgreSQL)
+WEB ARCHITECTURE ───────── Semantic HTML5 · Responsive CSS3 · Modern JavaScript (ES6+) · UI/UX Design · Vitest
+DEVREL & LEADERSHIP ────── Google Gemini Ambassador (14460) · Tech4Hack Chapter Lead · Team Leadership (Apex Coders)
 COMMUNITY & GROWTH ─────── Technical Community Management · Event Management · Developer Relations · Growth
+MODERN TOOLING ─────────── Git · GitHub · VS Code · Vibe Coding · GitHub Copilot · Replit Agent
+```
 MODERN TOOLING ─────────── Git · GitHub · VS Code · Vibe Coding · GitHub Copilot · Replit Agent
 ```
 

@@ -225,7 +225,7 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="36
     </text>
     <!-- Role 3: SIH 2026 Lead & Hackathons -->
     <text class="role-text" opacity="0">
-      🏆 SIH 2026 TEAM LEADER // TOP 10 GRAVITON
+      🏆 CREATOR OF VERDICT // SIH 2026 TEAM LEADER
       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.50;0.56;0.72;0.75" dur="12s" repeatCount="indefinite"/>
       <animate attributeName="y" values="6;0;0;-6" keyTimes="0.50;0.56;0.72;0.75" dur="12s" repeatCount="indefinite"/>
     </text>

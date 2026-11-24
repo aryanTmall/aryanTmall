@@ -85,37 +85,37 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBo
       RACE CRAFT <tspan fill="#6880a4">// WHAT I BUILD &amp; EXPLORE</tspan>
     </text>
 
-    <!-- Capability Row 1: Frontend & Web Craft -->
+    <!-- Capability Row 1: Full-Stack Web Craft -->
     <g transform="translate(18, 76)">
       <rect width="374" height="72" rx="10" fill="#090f1d" stroke="#1c2d4a" stroke-width="1"/>
       <rect x="12" y="14" width="44" height="44" rx="8" fill="#111d33" stroke="#ff6b00" stroke-width="1"/>
       <text x="34" y="42" fill="#ff6b00" font-size="18" font-weight="900" text-anchor="middle">&lt;/&gt;</text>
 
-      <text x="68" y="30" fill="#ffffff" font-size="13" font-weight="700">Modern Web Interfaces &amp; UI Craft</text>
-      <text x="68" y="46" fill="#8da2c0" font-size="10.5">Semantic HTML5, CSS3 responsive grid &amp; ES6+ JavaScript.</text>
-      <text x="68" y="60" fill="#ff6b00" font-size="9.5" font-weight="800">TELEMETRY: CLEAN CODE // RESPONSIVE DESIGN</text>
+      <text x="68" y="30" fill="#ffffff" font-size="13" font-weight="700">Full-Stack &amp; Next.js 16 Architecture</text>
+      <text x="68" y="46" fill="#8da2c0" font-size="10.5">Next.js 16 Turbopack, TypeScript, React 19, HTML5 &amp; CSS3.</text>
+      <text x="68" y="60" fill="#ff6b00" font-size="9.5" font-weight="800">TELEMETRY: VERDICT ENGINE // TYPE-SAFE FRONTEND</text>
     </g>
 
-    <!-- Capability Row 2: Python Scripting & AI/ML -->
+    <!-- Capability Row 2: Python Backend & AI/ML -->
     <g transform="translate(18, 160)">
       <rect width="374" height="72" rx="10" fill="#090f1d" stroke="#1c2d4a" stroke-width="1"/>
       <rect x="12" y="14" width="44" height="44" rx="8" fill="#111d33" stroke="#39d353" stroke-width="1"/>
       <text x="34" y="42" fill="#39d353" font-size="18" font-weight="900" text-anchor="middle">🐍</text>
 
-      <text x="68" y="30" fill="#ffffff" font-size="13" font-weight="700">Python, AI/ML &amp; Prompt Engineering</text>
-      <text x="68" y="46" fill="#8da2c0" font-size="10.5">Machine Learning, data pipelines &amp; geospatial thermal logic.</text>
-      <text x="68" y="60" fill="#39d353" font-size="9.5" font-weight="800">TELEMETRY: SCRIPTING // FIRST-PRINCIPLES AI/ML</text>
+      <text x="68" y="30" fill="#ffffff" font-size="13" font-weight="700">Python Backend, AI/ML &amp; Databases</text>
+      <text x="68" y="46" fill="#8da2c0" font-size="10.5">FastAPI, Flask, Supabase RLS, NASA satellite AI &amp; ML models.</text>
+      <text x="68" y="60" fill="#39d353" font-size="9.5" font-weight="800">TELEMETRY: THERMOINTEL // CAMPUS MANAGER // BACKEND</text>
     </g>
 
-    <!-- Capability Row 3: Google Ambassador & Community Leadership -->
+    <!-- Capability Row 3: Flagships & Community Leadership -->
     <g transform="translate(18, 244)">
       <rect width="374" height="72" rx="10" fill="#090f1d" stroke="#1c2d4a" stroke-width="1"/>
       <rect x="12" y="14" width="44" height="44" rx="8" fill="#111d33" stroke="#fcd700" stroke-width="1"/>
       <text x="34" y="42" fill="#fcd700" font-size="18" font-weight="900" text-anchor="middle">⚡</text>
 
       <text x="68" y="30" fill="#ffffff" font-size="13" font-weight="700">Google Gemini Ambassador &amp; Chapter Lead</text>
-      <text x="68" y="46" fill="#8da2c0" font-size="10.5">Gemini Ambassador (GID: 14460) · Tech4Hack Lead · SIH 2026 Lead.</text>
-      <text x="68" y="60" fill="#fcd700" font-size="9.5" font-weight="800">TELEMETRY: DEVREL // TOP 10 GRAVITON // SIH 2026</text>
+      <text x="68" y="46" fill="#8da2c0" font-size="10.5">Gemini Amb. (14460) · Tech4Hack Lead · SIH 2026 Lead · HexWartz.</text>
+      <text x="68" y="60" fill="#fcd700" font-size="9.5" font-weight="800">TELEMETRY: DEVREL // NATIONAL HACKATHONS // 141+ NETWORK</text>
     </g>
   </g>
 
@@ -177,14 +177,14 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBo
         <text x="16" y="80" fill="#fcd700" font-size="9.5" font-weight="700">STATUS: TECH4HACK CHAPTER LEAD // DEVREL</text>
       </g>
 
-      <!-- Slide 3: Hackathon Podiums & Prototyping -->
+      <!-- Slide 3: Verdict & Hackathon Podiums -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.66;0.71;0.97;1" dur="12s" repeatCount="indefinite"/>
         <rect width="370" height="92" rx="10" fill="#090f1d" stroke="#00f0ff" stroke-width="1"/>
-        <text x="16" y="26" fill="#00f0ff" font-size="13" font-weight="800">🏆 PODIUM FINISHES &amp; HACKATHONS</text>
-        <text x="16" y="46" fill="#ffffff" font-size="11.5" font-weight="600">Top 10 Graviton Hackathon 2026 · SIH 2026 Lead (ThermoIntel).</text>
-        <text x="16" y="64" fill="#8da2c0" font-size="10.5">NIAT Sprint Winner · CYPHER-DigiWeek Apex Coders · HackO'Ween.</text>
-        <text x="16" y="80" fill="#39d353" font-size="9.5" font-weight="700">STATUS: HIGH-SPEED PROTOTYPER &amp; LEAD</text>
+        <text x="16" y="26" fill="#00f0ff" font-size="13" font-weight="800">🏆 VERDICT ENGINE &amp; NATIONAL HACKATHONS</text>
+        <text x="16" y="46" fill="#ffffff" font-size="11.5" font-weight="600">Verdict Next.js 16 AI Engine · SIH 2026 Lead (ThermoIntel).</text>
+        <text x="16" y="64" fill="#8da2c0" font-size="10.5">HexWartz 2026 24h Sprint · Top 10 Graviton · NIAT Sprint Winner.</text>
+        <text x="16" y="80" fill="#39d353" font-size="9.5" font-weight="700">STATUS: VERDICT LIVE // 39 TESTS PASSING</text>
       </g>
     </g>
 

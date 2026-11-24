@@ -266,30 +266,30 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBo
       </g>
     </g>
 
-    <!-- Department 3: PIT STOP ACCELERATION // LEARNING -->
+    <!-- Department 3: FULL-STACK FRAMEWORKS // ACTIVE -->
     <g transform="translate(416, 0)">
       <rect width="195" height="195" rx="12" fill="url(#chipBg)" stroke="#1f3354" stroke-width="1.2" class="glow-chip3"/>
       <path d="M0 0 L195 0 L195 30 L0 30 Z" fill="#0a1222"/>
       <line x1="0" y1="30" x2="195" y2="30" stroke="#1f3354" stroke-width="0.8"/>
-      <text x="12" y="19" fill="#00f0ff" font-size="10" font-weight="800" letter-spacing="0.1em">ROADMAP // IN PROGRESS</text>
+      <text x="12" y="19" fill="#00f0ff" font-size="10" font-weight="800" letter-spacing="0.1em">FRAMEWORKS // ACTIVE</text>
 
       <g transform="translate(12, 44)">
-        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
-        <text x="41" y="17" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">React.js</text>
+        <rect x="0" y="0" width="82" height="26" rx="6" fill="#080e1c" stroke="#00f0ff" stroke-width="1"/>
+        <text x="41" y="17" fill="#00f0ff" font-size="10.5" font-weight="700" text-anchor="middle">Next.js 16</text>
 
-        <rect x="90" y="0" width="80" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
-        <text x="130" y="17" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">Next.js</text>
+        <rect x="90" y="0" width="80" height="26" rx="6" fill="#080e1c" stroke="#3178c6" stroke-width="1"/>
+        <text x="130" y="17" fill="#38bdf8" font-size="10.5" font-weight="700" text-anchor="middle">TypeScript</text>
 
-        <rect x="0" y="36" width="82" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
-        <text x="41" y="53" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">TypeScript</text>
+        <rect x="0" y="36" width="82" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="41" y="53" fill="#ffffff" font-size="10.5" font-weight="700" text-anchor="middle">React 19</text>
 
-        <rect x="90" y="36" width="80" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
-        <text x="130" y="53" fill="#8da2c0" font-size="11" font-weight="700" text-anchor="middle">C++</text>
+        <rect x="90" y="36" width="80" height="26" rx="6" fill="#080e1c" stroke="#39d353" stroke-width="1"/>
+        <text x="130" y="53" fill="#39d353" font-size="10.5" font-weight="700" text-anchor="middle">Supabase</text>
 
-        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#1d2d49" stroke-width="1"/>
-        <text x="85" y="89" fill="#8da2c0" font-size="10.5" font-weight="700" text-anchor="middle">Full-Stack Frameworks</text>
+        <rect x="0" y="72" width="170" height="26" rx="6" fill="#080e1c" stroke="#253a5e" stroke-width="1"/>
+        <text x="85" y="89" fill="#fcd700" font-size="10.5" font-weight="700" text-anchor="middle">Vitest &amp; Flask APIs</text>
 
-        <text x="0" y="132" fill="#fcd700" font-size="9" font-weight="800">STATUS: TRAINING LAPS</text>
+        <text x="0" y="132" fill="#39d353" font-size="9" font-weight="800">STATUS: PRODUCTION // SHIPPED</text>
       </g>
     </g>
 
